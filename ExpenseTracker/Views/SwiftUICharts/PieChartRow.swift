@@ -37,15 +37,6 @@ public struct PieChartRow : View {
     }
 }
 
-//#if DEBUG
-//struct PieChartRow_Previews : PreviewProvider {
-//    static var previews: some View {
-//        PieChartRow(data:[8,23,54,32,12,37,7,23,43], backgroundColor: Color(red: 252.0/255.0, green: 236.0/255.0, blue: 234.0/255.0), accentColor: Color(red: 225.0/255.0, green: 97.0/255.0, blue: 76.0/255.0)).frame(width: 100, height: 100)
-//        
-//    }
-//}
-//#endif
-
 struct PieChartRow_Previews: PreviewProvider {
     static var previews: some View {
         /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/

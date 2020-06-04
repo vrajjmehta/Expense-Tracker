@@ -8,8 +8,6 @@
 
 import SwiftUI
 
-
-
 public struct PieChartView : View {
     public var data: [(value: Double, color: Color)]
     
@@ -30,11 +28,3 @@ public struct PieChartView : View {
             .frame(width: self.formSize.width, height: self.formSize.height)
     }
 }
-
-//#if DEBUG
-//struct PieChartView_Previews : PreviewProvider {
-//    static var previews: some View {
-//        PieChartView(data:[56,78,53,65,54])
-//    }
-//}
-//#endif

@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
-        let contentView = ContentView()
+        let contentView = MainView()
             .environment(\.managedObjectContext, coreDataStack.viewContext)
 
         if let windowScene = scene as? UIWindowScene {

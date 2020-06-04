@@ -1,5 +1,5 @@
 //
-//  Utils.swift
+//  Utilities.swift
 //  ExpenseTracker
 //
 //  Created by Alfian Losari on 19/04/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Utils {
+struct Utilities {
     
     static let dateFormatter: RelativeDateTimeFormatter = {
         let formatter = RelativeDateTimeFormatter()

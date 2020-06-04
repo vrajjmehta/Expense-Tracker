@@ -32,7 +32,7 @@ struct LogFormView: View {
             Form {
                 TextField("Name", text: $name)
                     .disableAutocorrection(true)
-                TextField("Amount", value: $amount, formatter: Utils.numberFormatter)
+                TextField("Amount", value: $amount, formatter: Utilities.numberFormatter)
                     .keyboardType(.numbersAndPunctuation)
                     
                 Picker(selection: $category, label: Text("Category")) {

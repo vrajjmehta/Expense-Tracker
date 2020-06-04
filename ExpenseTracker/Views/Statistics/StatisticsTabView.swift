@@ -1,5 +1,5 @@
 //
-//  DashboardTabView.swift
+//  StatisticsTabView.swift
 //  ExpenseTracker
 //
 //  Created by Alfian Losari on 19/04/20.
@@ -9,7 +9,7 @@
 import SwiftUI
 import CoreData
 
-struct DashboardTabView: View {
+struct StatisticsTabView: View {
     
     @Environment(\.managedObjectContext)
     var context: NSManagedObjectContext
@@ -83,8 +83,8 @@ struct CategorySum: Identifiable, Equatable {
 }
 
 
-struct DashboardTabView_Previews: PreviewProvider {
+struct StatisticsTabView_Previews: PreviewProvider {
     static var previews: some View {
-        DashboardTabView()
+        StatisticsTabView()
     }
 }

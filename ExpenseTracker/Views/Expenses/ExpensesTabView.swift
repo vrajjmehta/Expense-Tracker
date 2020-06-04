@@ -1,5 +1,5 @@
 //
-//  LogsTabView.swift
+//  ExpensesTabView.swift
 //  ExpenseTracker
 //
 //  Created by Alfian Losari on 19/04/20.
@@ -9,7 +9,7 @@
 import SwiftUI
 import CoreData
 
-struct LogsTabView: View {
+struct ExpensesTabView: View {
     
     @Environment(\.managedObjectContext)
         var context: NSManagedObjectContext
@@ -49,8 +49,8 @@ struct LogsTabView: View {
     
 }
 
-struct LogsTabView_Previews: PreviewProvider {
+struct ExpensesTabView_Previews: PreviewProvider {
     static var previews: some View {
-        LogsTabView()
+        ExpensesTabView()
     }
 }
