@@ -15,7 +15,7 @@ struct ExpensesTabView: View {
         var context: NSManagedObjectContext
     
     @State private var searchText : String = ""
-    @State private var searchBarHeight: CGFloat = 0
+    @State private var SearchBarHeight: CGFloat = 0
     @State private var sortType = SortType.date
     @State private var sortOrder = SortOrder.descending
     
@@ -25,14 +25,14 @@ struct ExpensesTabView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                SearchBar(text: $searchText, keyboardHeight: $searchBarHeight, placeholder: "Search expenses")
+                SearchBar(text: $searchText, keyboardHeight: $SearchBarHeight, placeholder: "Search expenses")
                 FilterCategoriesView(selectedCategories: $selectedCategories)
                 Divider()
                 SelectSortOrderView(sortType: $sortType, sortOrder: $sortOrder)
                 Divider()
                 LogListView(predicate: ExpenseLog.predicate(with: Array(selectedCategories), searchText: searchText), sortDescriptor: ExpenseLogSort(sortType: sortType, sortOrder: sortOrder).sortDescriptor)
             }
-            .padding(.bottom, searchBarHeight)
+            .padding(.bottom, SearchBarHeight)
             .sheet(isPresented: $isAddFormPresented) {
                 LogFormView(context: self.context)
             }

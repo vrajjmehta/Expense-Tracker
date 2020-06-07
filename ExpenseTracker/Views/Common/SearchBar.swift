@@ -17,12 +17,12 @@ struct SearchBar: UIViewRepresentable {
     class Cordinator : NSObject, UISearchBarDelegate {
         
         @Binding var text : String
-        @Binding var searchBarHeight: CGFloat
+        @Binding var SearchBarHeight: CGFloat
 
         
-        init(text : Binding<String>, searchBarHeight: Binding<CGFloat>) {
+        init(text : Binding<String>, SearchBarHeight: Binding<CGFloat>) {
             _text = text
-            _searchBarHeight = searchBarHeight
+            _SearchBarHeight = SearchBarHeight
             
             super.init()
             NotificationCenter.default.addObserver(
@@ -40,37 +40,37 @@ struct SearchBar: UIViewRepresentable {
             )
         }
         
-        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        func SearchBar(_ SearchBar: UISearchBar, textDidChange searchText: String) {
             text = searchText
         }
         
         
-        func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-            searchBar.resignFirstResponder()
+        func SearchBarSearchButtonClicked(_ SearchBar: UISearchBar) {
+            SearchBar.resignFirstResponder()
         }
         
         @objc func keyboardWillShow(_ notification: Notification) {
             if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
                 let keyboardRectangle = keyboardFrame.cgRectValue
-                searchBarHeight = keyboardRectangle.height
+                SearchBarHeight = keyboardRectangle.height
             }
         }
         
         @objc func keyboardWillHide(_ notification: Notification) {
-            searchBarHeight = 0
+            SearchBarHeight = 0
         }
     }
     
     func makeCoordinator() -> SearchBar.Cordinator {
-        return Cordinator(text: $text, searchBarHeight: $keyboardHeight)
+        return Cordinator(text: $text, SearchBarHeight: $keyboardHeight)
     }
     
     func makeUIView(context: UIViewRepresentableContext<SearchBar>) -> UISearchBar {
-        let searchBar = UISearchBar(frame: .zero)
-        searchBar.placeholder = placeholder
-        searchBar.delegate = context.coordinator
-        searchBar.enablesReturnKeyAutomatically = false
-        return searchBar
+        let SearchBar = UISearchBar(frame: .zero)
+        SearchBar.placeholder = placeholder
+        SearchBar.delegate = context.coordinator
+        SearchBar.enablesReturnKeyAutomatically = false
+        return SearchBar
     }
     
     func updateUIView(_ uiView: UISearchBar, context: UIViewRepresentableContext<SearchBar>) {

@@ -32,7 +32,7 @@ struct StatisticsTabView: View {
             
             if categoriesSum != nil {
                 if totalExpenses != nil && totalExpenses! > 0 {
-                    PieChartView(
+                    PieChart(
                         data: categoriesSum!.map { ($0.sum, $0.category.color) },
                         style: Styles.pieChartStyleOne,
                         form: CGSize(width: 300, height: 240),
