@@ -2,12 +2,13 @@
 //  PieChartCell.swift
 //  ChartView
 //
-//  Created by Declan Glover on 2020. 06. 01..
+//  Created by András Samu on 2019. 06. 12..
+//  Copyright © 2019. András Samu. All rights reserved.
 //
 
 import SwiftUI
 
-struct pieSection: Identifiable {
+struct PieSlice: Identifiable {
     var id = UUID()
     var startDeg: Double
     var endDeg: Double
@@ -16,7 +17,7 @@ struct pieSection: Identifiable {
     var color: Color
 }
 
-public struct PieCellCreation : View {
+public struct PieChartCell : View {
     @State private var show:Bool = false
     var rect: CGRect
     var radius: CGFloat {
@@ -54,10 +55,10 @@ extension CGRect {
 }
 
 #if DEBUG
-struct PieCellCreation_Previews : PreviewProvider {
+struct PieChartCell_Previews : PreviewProvider {
     static var previews: some View {
         GeometryReader { geometry in
-            PieCellCreation(rect: geometry.frame(in: .local),startDeg: 0.0,endDeg: 90.0, index: 0, backgroundColor: Color(red: 252.0/255.0, green: 236.0/255.0, blue: 234.0/255.0), accentColor: Color(red: 225.0/255.0, green: 97.0/255.0, blue: 76.0/255.0))
+            PieChartCell(rect: geometry.frame(in: .local),startDeg: 0.0,endDeg: 90.0, index: 0, backgroundColor: Color(red: 252.0/255.0, green: 236.0/255.0, blue: 234.0/255.0), accentColor: Color(red: 225.0/255.0, green: 97.0/255.0, blue: 76.0/255.0))
             }.frame(width:100, height:100)
         
     }
