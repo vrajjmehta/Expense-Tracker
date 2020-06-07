@@ -30,7 +30,7 @@ struct ExpensesTabView: View {
                 Divider()
                 SelectSortOrderView(sortType: $sortType, sortOrder: $sortOrder)
                 Divider()
-                LogListView(predicate: ExpenseLog.predicate(with: Array(selectedCategories), searchText: searchText), sortDescriptor: ExpenseLogSort(sortType: sortType, sortOrder: sortOrder).sortDescriptor)
+                LogListView(predicate: ExpenseLog.predicate(with: Array(selectedCategories), searchText: searchText), sortDescriptor: ExpenseSort(sortType: sortType, sortOrder: sortOrder).sortDescriptor)
             }
             .padding(.bottom, searchBarHeight)
             .sheet(isPresented: $isAddFormPresented) {

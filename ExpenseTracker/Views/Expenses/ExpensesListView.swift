@@ -83,7 +83,7 @@ struct LogListView: View {
 struct LogListView_Previews: PreviewProvider {
     static var previews: some View {
         let stack = CoreDataStack(containerName: "ExpenseTracker")
-        let sortDescriptor = ExpenseLogSort(sortType: .date, sortOrder: .descending).sortDescriptor
+        let sortDescriptor = ExpenseSort(sortType: .date, sortOrder: .descending).sortDescriptor
         return LogListView(predicate: nil, sortDescriptor: sortDescriptor)
             .environment(\.managedObjectContext, stack.viewContext)
     }
