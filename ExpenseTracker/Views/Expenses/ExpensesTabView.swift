@@ -32,7 +32,7 @@ struct ExpensesTabView: View {
             .sheet(isPresented: $isAddFormPresented) {
                 LogFormView(context: self.context)
             }
-            .navigationBarItems(trailing: Button(action: addTapped) { Text("Add") })
+            .navigationBarItems(trailing: Button(action: addTapped) { Image(systemName: "plus.circle.fill") })
             .navigationBarTitle("Expense Logs", displayMode: .inline)
         }
     }

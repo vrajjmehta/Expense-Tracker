@@ -24,8 +24,6 @@ struct SettingsTabView: View {
             }
             .navigationBarTitle("Settings", displayMode: .inline)
         }
-        
-        
     }
 }
 

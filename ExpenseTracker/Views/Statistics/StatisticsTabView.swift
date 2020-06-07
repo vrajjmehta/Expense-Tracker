@@ -20,7 +20,7 @@ struct StatisticsTabView: View {
                     Text("Total expenses")
                         .font(.headline)
                     if totalExpenses != nil {
-                        Text(totalExpenses!.formattedCurrencyText)
+                        Text("A" + totalExpenses!.formattedCurrencyText)
                             .font(.largeTitle)
                     }
                 }
@@ -39,7 +39,7 @@ struct StatisticsTabView: View {
                 Divider()
 
                 List {
-                    Text("Breakdown").font(.headline)
+                    Text("Breakup by category").font(.headline)
                     ForEach(self.categoriesSum!) {
                         CategoryRowView(category: $0.category, sum: $0.sum)
                     }
@@ -47,13 +47,13 @@ struct StatisticsTabView: View {
             }
             
             if totalExpenses == nil && categoriesSum == nil {
-                Text("No expenses data\nPlease add your expenses from the logs tab")
+                Text("No expenses data\nPlease add your expenses from the Expenses tab")
                     .multilineTextAlignment(.center)
                     .font(.headline)
                     .padding(.horizontal)
             }
         }
-//        .background(Color.red)
+        .background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
         .padding(.top)
         .onAppear(perform: fetchTotalSums)
     }

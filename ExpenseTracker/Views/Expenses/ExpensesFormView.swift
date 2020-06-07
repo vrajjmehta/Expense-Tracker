@@ -42,8 +42,8 @@ struct LogFormView: View {
             }
 
             .navigationBarItems(
-                leading: Button(action: self.onCancelTapped) { Text("Cancel")},
-                trailing: Button(action: self.onSaveTapped) { Text("Save")}
+                leading: Button(action: self.onCancelTapped) { Image(systemName: "xmark.octagon.fill") },
+                trailing: Button(action: self.onSaveTapped) { Image(systemName: "folder.fill.badge.plus") }
             ).navigationBarTitle(title)
             
         }
