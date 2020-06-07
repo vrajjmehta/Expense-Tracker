@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ExpenseTracker.xcodeproj">
+      location = "self:/Users/vrajmehta/Desktop/iOS-App/Expense-tracker-vraj/MoneyManager.xcodeproj">
    </FileRef>
 </Workspace>

@@ -13,7 +13,7 @@
 		8BE1F543244C04E90017E21D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1F542244C04E90017E21D /* MainView.swift */; };
 		8BE1F545244C04EA0017E21D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE1F544244C04EA0017E21D /* Assets.xcassets */; };
 		8BE1F54B244C04EA0017E21D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE1F549244C04EA0017E21D /* LaunchScreen.storyboard */; };
-		8BE1F554244C05220017E21D /* ExpenseTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1F552244C05220017E21D /* ExpenseTracker.xcdatamodeld */; };
+		8BE1F554244C05220017E21D /* MoneyManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1F552244C05220017E21D /* MoneyManager.xcdatamodeld */; };
 		8BE1F557244C05AB0017E21D /* ExpenseLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1F556244C05AB0017E21D /* ExpenseLog.swift */; };
 		8BE1F55A244C060B0017E21D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1F559244C060B0017E21D /* Category.swift */; };
 		8BE1F55D244C07240017E21D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1F55C244C07240017E21D /* Utilities.swift */; };
@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		220F69F6248CAD9200AD6CCA /* SettingsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsTabView.swift; path = Settings/SettingsTabView.swift; sourceTree = "<group>"; };
-		8BE1F53B244C04E90017E21D /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE1F53B244C04E90017E21D /* MoneyManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE1F53E244C04E90017E21D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BE1F540244C04E90017E21D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8BE1F542244C04E90017E21D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		8BE1F532244C04E90017E21D = {
 			isa = PBXGroup;
 			children = (
-				8BE1F53D244C04E90017E21D /* ExpenseTracker */,
+				8BE1F53D244C04E90017E21D /* MoneyManager */,
 				8BE1F53C244C04E90017E21D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,12 +88,12 @@
 		8BE1F53C244C04E90017E21D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BE1F53B244C04E90017E21D /* ExpenseTracker.app */,
+				8BE1F53B244C04E90017E21D /* MoneyManager.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8BE1F53D244C04E90017E21D /* ExpenseTracker */ = {
+		8BE1F53D244C04E90017E21D /* MoneyManager */ = {
 			isa = PBXGroup;
 			children = (
 				8BE1F53E244C04E90017E21D /* AppDelegate.swift */,
@@ -104,9 +104,9 @@
 				8BE1F544244C04EA0017E21D /* Assets.xcassets */,
 				8BE1F549244C04EA0017E21D /* LaunchScreen.storyboard */,
 				8BE1F54C244C04EA0017E21D /* Info.plist */,
-				8BE1F552244C05220017E21D /* ExpenseTracker.xcdatamodeld */,
+				8BE1F552244C05220017E21D /* MoneyManager.xcdatamodeld */,
 			);
-			path = ExpenseTracker;
+			path = MoneyManager;
 			sourceTree = "<group>";
 		};
 		8BE1F555244C057C0017E21D /* Models */ = {
@@ -186,9 +186,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BE1F53A244C04E90017E21D /* ExpenseTracker */ = {
+		8BE1F53A244C04E90017E21D /* MoneyManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BE1F54F244C04EA0017E21D /* Build configuration list for PBXNativeTarget "ExpenseTracker" */;
+			buildConfigurationList = 8BE1F54F244C04EA0017E21D /* Build configuration list for PBXNativeTarget "MoneyManager" */;
 			buildPhases = (
 				8BE1F537244C04E90017E21D /* Sources */,
 				8BE1F538244C04E90017E21D /* Frameworks */,
@@ -198,9 +198,9 @@
 			);
 			dependencies = (
 			);
-			name = ExpenseTracker;
+			name = MoneyManager;
 			productName = ExpenseTracker;
-			productReference = 8BE1F53B244C04E90017E21D /* ExpenseTracker.app */;
+			productReference = 8BE1F53B244C04E90017E21D /* MoneyManager.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8BE1F536244C04E90017E21D /* Build configuration list for PBXProject "ExpenseTracker" */;
+			buildConfigurationList = 8BE1F536244C04E90017E21D /* Build configuration list for PBXProject "MoneyManager" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -231,7 +231,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BE1F53A244C04E90017E21D /* ExpenseTracker */,
+				8BE1F53A244C04E90017E21D /* MoneyManager */,
 			);
 		};
 /* End PBXProject section */
@@ -274,7 +274,7 @@
 				8BE1F567244C08CB0017E21D /* StatisticsTabView.swift in Sources */,
 				8BE1F57B244C0C640017E21D /* SearchBar.swift in Sources */,
 				8BE1F570244C0A1E0017E21D /* CategoryRowView.swift in Sources */,
-				8BE1F554244C05220017E21D /* ExpenseTracker.xcdatamodeld in Sources */,
+				8BE1F554244C05220017E21D /* MoneyManager.xcdatamodeld in Sources */,
 				8BE1F55A244C060B0017E21D /* Category.swift in Sources */,
 				8BE1F581244C0DC80017E21D /* ExpensesListView.swift in Sources */,
 			);
@@ -413,10 +413,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ExpenseTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MoneyManager/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C2XD9H2JS;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ExpenseTracker/Info.plist;
+				INFOPLIST_FILE = MoneyManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,10 +433,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ExpenseTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MoneyManager/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C2XD9H2JS;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ExpenseTracker/Info.plist;
+				INFOPLIST_FILE = MoneyManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,7 +451,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BE1F536244C04E90017E21D /* Build configuration list for PBXProject "ExpenseTracker" */ = {
+		8BE1F536244C04E90017E21D /* Build configuration list for PBXProject "MoneyManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BE1F54D244C04EA0017E21D /* Debug */,
@@ -460,7 +460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BE1F54F244C04EA0017E21D /* Build configuration list for PBXNativeTarget "ExpenseTracker" */ = {
+		8BE1F54F244C04EA0017E21D /* Build configuration list for PBXNativeTarget "MoneyManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BE1F550244C04EA0017E21D /* Debug */,
@@ -472,13 +472,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8BE1F552244C05220017E21D /* ExpenseTracker.xcdatamodeld */ = {
+		8BE1F552244C05220017E21D /* MoneyManager.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				8BE1F553244C05220017E21D /* ExpenseTracker.xcdatamodel */,
 			);
 			currentVersion = 8BE1F553244C05220017E21D /* ExpenseTracker.xcdatamodel */;
-			path = ExpenseTracker.xcdatamodeld;
+			path = MoneyManager.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

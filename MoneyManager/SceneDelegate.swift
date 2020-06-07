@@ -9,7 +9,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     
-    var coreDataStack = CoreDataStack(containerName: "ExpenseTracker")
+    var coreDataStack = CoreDataStack(containerName: "MoneyManager")
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
