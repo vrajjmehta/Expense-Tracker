@@ -10,14 +10,14 @@ import Foundation
 
 struct Utilities {
     
-    static let dateFormat: RelativeDateTimeFormatter = {
+    static let dateFormatter: RelativeDateTimeFormatter = {
         let formatter = RelativeDateTimeFormatter()
         formatter.unitsStyle = .full
         return formatter
     }()
     
-    static let numberFormat: numberFormat = {
-        let formatter = numberFormat()
+    static let numberFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
         formatter.isLenient = true
         formatter.numberStyle = .currency
         return formatter

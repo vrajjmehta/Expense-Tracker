@@ -11,7 +11,7 @@ import Foundation
 extension Double {
     
     var formattedCurrencyText: String {
-        return Utilities.numberFormat.string(from: NSNumber(value: self)) ?? "0"
+        return Utilities.numberFormatter.string(from: NSNumber(value: self)) ?? "0"
     }
     
 }

@@ -16,7 +16,7 @@ extension ExpenseLog: Identifiable {
     }
     
     var dateText: String {
-        Utilities.dateFormat.localizedString(for: date ?? Date(), relativeTo: Date())
+        Utilities.dateFormatter.localizedString(for: date ?? Date(), relativeTo: Date())
     }
     
     var nameText: String {
@@ -24,7 +24,7 @@ extension ExpenseLog: Identifiable {
     }
     
     var amountText: String {
-        Utilities.numberFormat.string(from: NSNumber(value: amount?.doubleValue ?? 0)) ?? ""
+        Utilities.numberFormatter.string(from: NSNumber(value: amount?.doubleValue ?? 0)) ?? ""
     }
     
     static func fetchAllCategoriesTotalAmountSum(context: NSManagedObjectContext, completion: @escaping ([(sum: Double, category: Category)]) -> ()) {

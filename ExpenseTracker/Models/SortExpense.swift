@@ -27,7 +27,7 @@ extension SortOrder: Identifiable {
 }
 
 
-struct ExpenseSort {
+struct ExpenseLogSort {
     var sortType: SortType
     var sortOrder: SortOrder
     
