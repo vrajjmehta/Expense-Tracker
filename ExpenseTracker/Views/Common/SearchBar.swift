@@ -1,10 +1,6 @@
 //
 //  SearchBar.swift
 //  ExpenseTracker
-//
-//  Created by Alfian Losari on 18/04/20.
-//  Copyright © 2020 Alfian Losari. All rights reserved.
-//
 
 import SwiftUI
 

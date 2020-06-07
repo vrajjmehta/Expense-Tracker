@@ -1,10 +1,6 @@
 //
 //  ExpensesTabView.swift
 //  ExpenseTracker
-//
-//  Created by Alfian Losari on 19/04/20.
-//  Copyright © 2020 Alfian Losari. All rights reserved.
-//
 
 import SwiftUI
 import CoreData
@@ -26,9 +22,9 @@ struct ExpensesTabView: View {
         NavigationView {
             VStack(spacing: 0) {
                 SearchBar(text: $searchText, keyboardHeight: $searchBarHeight, placeholder: "Search expenses")
-                FilterCategoriesView(selectedCategories: $selectedCategories)
-                Divider()
                 SelectSortOrderView(sortType: $sortType, sortOrder: $sortOrder)
+                Divider()
+                FilterCategoriesView(selectedCategories: $selectedCategories)
                 Divider()
                 LogListView(predicate: ExpenseLog.predicate(with: Array(selectedCategories), searchText: searchText), sortDescriptor: ExpenseLogSort(sortType: sortType, sortOrder: sortOrder).sortDescriptor)
             }
@@ -48,9 +44,9 @@ struct ExpensesTabView: View {
     
     
 }
-
-struct ExpensesTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExpensesTabView()
-    }
-}
+//
+//struct ExpensesTabView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ExpensesTabView()
+//    }
+//}

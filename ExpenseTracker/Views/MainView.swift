@@ -1,10 +1,6 @@
 //
 //  ContentView.swift
 //  ExpenseTracker
-//
-//  Created by Alfian Losari on 19/04/20.
-//  Copyright © 2020 Alfian Losari. All rights reserved.
-//
 
 import SwiftUI
 
@@ -28,6 +24,15 @@ struct MainView: View {
                     }
             }
             .tag(1)
+            
+            SettingsTabView()
+                .tabItem {
+                    VStack {
+                        Text("Settings")
+                        Image(systemName: "gear")
+                    }
+            }
+            .tag(2)
         }
     }
 }
